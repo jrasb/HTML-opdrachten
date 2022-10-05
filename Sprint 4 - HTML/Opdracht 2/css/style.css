@@ -7,9 +7,12 @@ body {
     font-size: 14px;
 }
 
-#wrapper {
-    width: 900px;
-    /*background-color: #ff3333;*/
+#headwrapper {
+    width: 100%;
+
+}
+
+header, nav {
     margin: auto;
 }
 
@@ -21,12 +24,12 @@ h1 {
     font-size: 28px;
 }
 
-header, footer {
+footer {
     background-color: #00c9fd;
 }
 
 header > h1 {
-    color: #fff;
+    color: #000;
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: normal;
@@ -34,14 +37,18 @@ header > h1 {
     padding-top: 20px;
 }
 
-nav, .contact, article {
+.contact, article {
     background-color: #ccc;
+}
+
+nav {
+    text-align: center;
 }
 
 nav > a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
-    color: #222;
+    color: #000;
     text-decoration: none;
     display: inline-block;
     width: 200px;
@@ -51,19 +58,27 @@ nav > a {
 }
 
 nav > a:hover {
-    background-color: #f0f0f0;
+    color: #fff;
+    background-color: #00c9fd;
+}
+
+#big-image {
+    height: 550px;
+    width: 100%;
+    background-image: url(../img/titan2.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 #big-image > p {
+    width: 350px;
     color: #00c9fd;
     background-color: #fff;
     font-size: 12px;
-    right: 10px;
-}
-
-#big-image > img {
-    width: 900px;
-    object-fit: fill;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
 }
 
 p {
@@ -96,10 +111,70 @@ article {
 
 footer > p {
     color: #f0f0f0;
+    width: 860px;
     height: 150px;
+    margin: auto;
 }
 
 .analytical-engine {
     width: 348px;
     float: right;
+}
+
+.focus {
+    color: #00c9fd;
+}
+
+main {
+    margin: auto;
+    width: 900px;
+}
+
+.bigleft {
+    width: 590px;
+    margin-right: 10px;
+    float: left;
+}
+
+.bigleft > img {
+    height: 455px;
+    width: 100%;
+}
+
+.bigleft > p {
+    text-align: center;
+}
+
+.smallright {
+    width: 290px;
+    margin-left: 10px;
+    float: right;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.contact > table {
+    margin: auto;
+    width: 900px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.right{
+    text-align: right;
+}
+
+td > a {
+    text-decoration: none;
+}
+
+td > a:hover {
+    color: #000;
+}
+
+.image-link {
+    width: 50px;
+    float: left;
+    margin: 5px
 }
